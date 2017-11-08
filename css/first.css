@@ -1,0 +1,66 @@
+html,body{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  height: 100%;
+}
+body{
+  max-width: 600px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+.con{
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+.con img{
+  width: 100%;
+}
+.con .pic-con{
+  padding: 0 16px;
+  position: absolute;
+  box-sizing: border-box;
+  top: 50%;
+  margin-top: -100px;
+}
+.con .pic-con img{
+  margin-bottom: 250px;
+  opacity: 1;
+  transform: translateX(0);
+}
+.con .pic-con img.slide-none{
+  transform: translateX(400px);
+  opacity: 0;
+  transition: transform, width, opacity;
+  -moz-transition: transform, width, opacity;/* Firefox 4 */
+  -webkit-transition: transform, width, opacity; /* Safari 和 Chrome */
+  -o-transition: transform, width, opacity;/* Opera */
+  transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s; /* Firefox 4 */
+  -webkit-transition-duration: 0.5s; /* Safari 和 Chrome */
+  -o-transition-duration: 0.5s; /* Opera */
+}
+.con .pic-con .press-btn{
+  font-size: 22px;
+  color: #fff;
+  letter-spacing: 3px;
+}
+.video-con{
+  display: none;
+  height: 100%;
+}
+.bottom{
+  display: none;
+  padding-top: 200px;
+  box-sizing: border-box;
+}
+.bottom .text{
+  margin: 0;
+  font-size: 30px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+.bottom a{
+  color: #333;
+}
