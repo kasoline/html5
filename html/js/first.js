@@ -1,5 +1,5 @@
 $(function(){
-  $(".press-btn").on("touchend", function(){
+  $(".press-btn").on("click", function(){
     var video = document.getElementById("video");
     $(".p-msg").addClass("slide-none");
     setTimeout(function(){
